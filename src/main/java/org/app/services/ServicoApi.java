@@ -22,10 +22,10 @@ public class ServicoApi{
 
             //Mapeando no objeto Dto
             ObjectMapper mapper = new ObjectMapper();
-            dtoEndereco = mapper.readValue(response.body(),DtoEndereco.class);
+            this.dtoEndereco = mapper.readValue(response.body(),DtoEndereco.class);
         } catch (Exception x) {
             System.out.println(x.getMessage());
         }
-        return dtoEndereco;
+        return this.dtoEndereco;
     }
 }
