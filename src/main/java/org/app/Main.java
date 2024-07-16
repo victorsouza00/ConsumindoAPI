@@ -10,6 +10,7 @@ public class Main {
 
 
         try {
+            System.out.println("CEP:");
             System.out.println(servicoApi.getEndereco("54735080"));
         } catch (Exception e) {
             throw new RuntimeException(e);
